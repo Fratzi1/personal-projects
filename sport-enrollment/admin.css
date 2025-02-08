@@ -1,0 +1,62 @@
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove double borders */
+    margin: 20px 0; /* Add some vertical spacing */
+    font-size: 16px; /* Slightly larger font size */
+    font-family: Arial, sans-serif;
+    text-align: left; /* Align text to the left */
+}
+
+/* Table header styling */
+table thead tr {
+    background-color: #f4f4f4; /* Light gray background */
+    border-bottom: 2px solid #ddd; /* Distinct bottom border */
+}
+
+table th {
+    padding: 12px; /* Add padding for spacing */
+    font-weight: bold; /* Make headers bold */
+    text-transform: uppercase; /* Uppercase header text */
+}
+
+/* Table body styling */
+table tbody tr {
+    border-bottom: 1px solid #ddd; /* Subtle row separators */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+table td {
+    padding: 10px 12px; /* Add padding inside cells */
+}
+
+/* Buttons inside the table */
+table .accept-btn, 
+table .decline-btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+table .accept-btn {
+    background-color: #28a745; /* Green for accept */
+}
+
+table .accept-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+table .decline-btn {
+    background-color: #dc3545; /* Red for decline */
+}
+
+table .decline-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

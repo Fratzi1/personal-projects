@@ -1,0 +1,96 @@
+/* Centering the form wrapper */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Styling the form container */
+#test-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+#test-form h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Section headings */
+#test-form h2 {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+/* Section description text */
+#test-form p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Input group headers */
+#test-form h3 {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Radio button inputs */
+#sex-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+#sex-inputs label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#sex-inputs .check-text {
+    margin-left: 5px;
+}
+
+/* Number inputs */
+#test-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+#test-form .submit {
+    text-align: center;
+}
+
+#test-form .submit input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result-message {
+    /* Inherit wrapper styles by being inside it */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eaf7e4; /* Light green to indicate success */
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    color: #155724;
+    font-size: 16px;
+    line-height: 1.5;
+}

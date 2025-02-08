@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+      
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFTTRQM67B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JFTTRQM67B');
+</script>
+      
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+      
+    <script src="https://runbundle.com/jsnew/jquery.3.6.0.min.js"></script>
+       
+
+<script src="https://runbundle.com/jsnew/lazysizes.min.js?2" async=""></script>
+    
+        
+    <title>Cooper Test Calculator | runbundle</title>
+    
+            <meta name="description" content="A calculator for the Cooper Test, which estimates a runner's VO2 Max">
+                    
+        
+        
+        
+            <link rel="stylesheet" type="text/css" href="https://runbundle.com/cssnew/small.css?9" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://runbundle.com/cssnew/big.css?8" media="screen and (min-width: 610px)">
+            
+    
+            
+            
+
+        
+        
+        
+        
+        
+            
+    <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Poppins&family=Mulish&family=Maven+Pro&family=Sometype+Mono&family=Merriweather&display=optional"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Poppins&family=Mulish&family=Maven+Pro&family=Sometype+Mono&family=Merriweather&display=optional"
+        rel="stylesheet"
+        type="text/css"
+    >
+    </noscript>    
+
+    
+        
+    <link rel="stylesheet" href="https://runbundle.com/cssnew/cooper-test.css">
+        <script>
+            var showResults = false;        </script>        <style>.custom-raptive-header{min-height:50px;margin-top:10px;margin-bottom:10px}@media screen and (min-width:768px){.custom-raptive-header{min-height:250px}}</style>
+            
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="https://runbundle.com/tools/vo2-max-calculators/cooper-test">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cooper Test">
+<meta property="og:url" content="https://runbundle.com/tools/vo2-max-calculators/cooper-test">
+<meta property="og:description" content="Calculate your VO2 max with a 12-minute run">
+<meta property="og:image" content="https://runbundle.com/img/social/facebook/runner-touching-watch.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@runbundledotcom">
+<meta name="twitter:creator" content="@runbundledotcom">
+<meta name="twitter:title" content="Cooper Test">
+<meta name="twitter:description" content="Calculate your VO2 max with a 12-minute run">
+<meta name="twitter:image" content="https://runbundle.com/img/social/twitter/runner-touching-watch.jpg">
+
+
+
+
+  
+<!-- AdThrive Head Tag Manual -->
+<script data-no-optimize="1" data-cfasync="false">
+(function(w, d) {
+    w.adthrive = w.adthrive || {};
+    w.adthrive.cmd = w.adthrive.cmd || [];
+    w.adthrive.plugin = 'adthrive-ads-manual';
+    w.adthrive.host = 'ads.adthrive.com';
+
+    var s = d.createElement('script');
+    s.async = true;
+    s.referrerpolicy='no-referrer-when-downgrade';
+    s.src = 'https://' + w.adthrive.host + '/sites/62d052a4477c946c18e705e7/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+    var n = d.getElementsByTagName('script')[0];
+    n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+<!-- End of AdThrive Head Tag -->
+
+
+
+
+
+  </head>
+  
+  
+  
+<!-- Google tag (gtag.js) -->
+
+  
+  
+  <body class="a2 b " id="tools-vo2-max-calculators-cooper-test">
+      
+    
+      
+    <nav class="navbar">
+      <div class="navbar-container container" >
+          <input type="checkbox">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="/tools/">Tools</a></li>
+              <li><a href="/articles/">Guides</a></li>
+              <li><a href="/training/">Training</a></li>
+              <li><a href="/interviews/">Interviews</a></li>
+              <li><a href="/opinion/">Opinion</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+
+
+
+      
+    <div id="main-wrapper">          
+    <header class="clear">
+
+        <div id="logo">
+                            <a aria-label="Go to runbundle homepage" href="/">
+                <img src="https://runbundle.com/img/runbundle.svg" alt="runbundle.com" width="212" height="36">
+                </a>            
+        </div>
+
+        
+        <nav id="main-menu">
+    <ul>
+        <li class="active">
+            <a id="tools-menu" href="/tools/"><span>Tools</span></a>
+        </li>
+        <li >
+            <a id="articles-menu" href="/articles/"><span>Guides</span></a>
+        </li>
+        <li >
+            <a id="training-menu" href="/training/"><span>Training</span></a>
+        </li>
+        <li >
+            <a id="opinion-menu" href="/opinion/running-rants/"><span>Opinion</span></a>
+        </li>
+        <li >
+            <a id="interviews-menu" href="/interviews/"><span>Interviews</span></a>
+        </li>
+    </ul>
+</nav>  
+    
+        
+
+            <div class="custom-raptive-header"></div>        
+        </header>
+
+        
+        
+<main>
+    
+    
+    
+            <div id="breadcrumbs">
+            <a href="/tools/">Running Calculators</a> &raquo; <a href="/tools/vo2-max-calculators/">VO<sub>2</sub> Max Calculators</a> &raquo; Cooper Test        </div><div id="content">
+    
+    <div id="items">
+
+                
+                            
+            <p class="jump-to"><a href="#description">&raquo;&nbsp;jump to description&nbsp;&raquo;</a></p>
+            
+            
+            
+                
+        <section id="test-form" >
+            <h1>Cooper Test Calculator</h1>
+        
+            <div class="content">
+                <form method="post" action="https://runbundle.com/tools/vo2-max-calculators/cooper-test" class="clear">                   
+                    
+                    <fieldset id="age-sex-details">
+
+                        <h2>Personal Details</h2>
+                        <p>
+                            Enter your age and sex.                        </p>
+
+                        <div class="input-wrapper clear">
+                            <h3>Sex:</h3>
+                            <div id="sex-inputs"
+                                 class="first-choice-inputs s-two-cols-n t-one-cols-n table
+                                                             ">
+                                <div>
+                                    <label title="Male" id="male-label"
+                                           class="n1 s-last-row checked">
+                                        <input type="radio" name="sex" id="male"
+                                               value="male" checked="checked"                                               required
+                                        >
+                                        <span class="check-text">Male</span>
+                                    </label>
+                                    <label title="Female" id="female-label"
+                                           class="n2 s-last-row t-last-row ">
+                                        <input type="radio" name="sex" id="female"
+                                               value="female"                                                required
+                                        >
+                                        <span class="check-text">Female</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="age-input" class="input-wrapper clear">
+                            <h3><label for="age">Age (11+):</label></h3>
+                            <div id="age-value" class="input-collection solo-inputs">
+                                <div class="input-hugger s-last-row t-last-row">
+                                    <input type="number"
+                                           min="11"
+                                           max="100"
+                                           name="age"
+                                           id="age"
+                                           value=""
+                                           title =""
+                                           required
+                                           class=""
+                                        >
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>                    
+
+                    
+                    <fieldset id="distance">
+                        <h2>Distance</h2>
+                        <p>
+                            Enter the distance run in 12 minutes.                        </p>                        
+                        <div id="run-distance-inputs" class="input-wrapper clear">
+                            <h3><label for="distance-input">Distance (metres):</label></h3>
+                            <div id="distance-value" class="input-collection solo-inputs">
+
+                                    <div class="input-hugger s-last-row t-last-row">
+                                        <input type="number"
+                                               name="distance"
+                                               id="distance-input"
+                                               required
+                                               min="1000"
+                                               max="5000"
+                                               size="7"
+                                               maxlength="7"
+                                               placeholder=""
+                                               value=""
+                                               title ="distance run in metres"
+                                               class=""
+                                        >
+                                    </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="submit">
+                        <input type="submit" name="submit"
+                               value="Calculate">
+                    </div>
+                    
+                    
+                </form>
+                    
+                
+            </div>
+        </section>
+            
+            
+                    
+        
+        <section id="description">
+            <h1>
+                Description            </h1>
+
+            <div class="details content">
+                
+                <h2>Introduction</h2>
+                
+                <p>The Cooper test is a simple means of estimating a runner's VO<sub>2</sub> Max, established by Dr Kenneth Cooper and described in his book, <a target="_blank" href="https://www.google.co.uk/books/edition/Aerobics/IMJ6PwAACAAJ">Aerobics</a>. The test is best completed on a running track with the assistance of a timekeeper.</p>
+                
+                <h2>Test procedure</h2>
+                
+                <p>Simply run continuously for 12 minutes and record the distance achieved.</p>
+                
+                <p>It's best to run on a running track in moderate conditions (i.e. without excessive heat, wind, or rain).</p>
+                
+                <p>It's also important to make sure you <a href="/articles/warm-ups">warm up well</a> for the test, to ensure that optimal performance is achieved.</p>
+                
+                <p>The distance can be used to estimate VO<sub>2</sub> Max, and used alongside age and sex to assess the quality of the performance (<a href="#interpretation">see below</a>).<p>
+
+                <h2>Benefits</h2>
+                
+                <p>The test protocol is straightforward, time-efficient, and can be performed with a minimum of equipment and assistance. It's also easily repeatable so that progression can be monitored over time without worrying about outside variables.</p>
+                
+                <h2>Using the calculator</h2>
+                
+                <p>To use the calculator simply choose your sex, enter your age and the total distance covered during the test, and hit Calculate.</p>
+                
+                
+                <p>Check out our other <a href="/tools/vo2-max-calculators/">calculators for estimating VO<sub>2</sub> max</a>.</p>
+                
+                <p><a href="#test-form">&uarr; go to calculator</a></p>                    
+                <p class="section-link">    
+                    <a class="sec-b" href="/tools/vo2-max-calculators/vo2-max-calculator">VDOT calculator</a>
+                </p>                    
+             
+                
+            </div>
+        </section>
+        
+        <section id="interpretation">
+            <h1>
+                Assessing Performance            </h1>
+
+            <div class="details content">
+
+                
+      
+    <p>The tables below show how the quality of a run can be assessed according to the runner's age and sex.</p>
+                
+    <h2>Adult men</h2>      
+    <table class="list large">
+        <tr class="row-first">
+            <th class="col-first">Age</th>
+            <th>Very poor</th>
+            <th>Poor</th>
+            <th>Average</th>
+            <th>Above average</th>
+            <th class="col-last">Excellent</th>
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                20 - 29
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1600 m
+            </td>
+            <td>
+                1600 - 2199 m
+            </td>
+            <td>
+                2200 - 2399 m
+            </td>
+            <td>
+                2400 - 2800 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2800 m
+            </td>
+        </tr>
+        <tr class="r1 numerical">
+            <th class="col-first column-label">
+                30 - 39
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1500 m
+            </td>
+            <td>
+                1500 - 1899 m
+            </td>
+            <td>
+                1900 - 2299 m
+            </td>
+            <td>
+                 2300 - 2700 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2700 m
+            </td>                    
+
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                40 - 49
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1400 m
+            </td>
+            <td>
+                1400 - 1699 m
+            </td>
+            <td>
+                1700 - 2099 m
+            </td>
+            <td>
+                 2100 - 2500 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2500 m
+            </td>
+        </tr>
+        <tr class="r1 numerical row-last">
+            <th class="col-first column-label">
+                50+
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1300 m
+            </td>
+            <td>
+                1300 - 1599 m
+            </td>
+            <td>
+                1600 - 1999 m
+            </td>
+            <td>
+                 2000 - 2400 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2400 m
+            </td>
+        </tr>
+    </table>
+                
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Men between 20 and 29 years old" colspan="2">Men 20-29</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1600 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1600 - 2199 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                2200 - 2399 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2400 - 2800 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2800 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+             
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Men between 30 and 39 years old" colspan="2">Men 30 - 39</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1500 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1500 - 1899 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1900 - 2299 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2300 - 2700 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2700 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Men between 40 and 49 years old" colspan="2">Men 40 - 49</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1400 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1400 - 1699 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1700 - 2099 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2100 - 2500 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2500 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Men over 50 years old" colspan="2">Men 50+</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1300 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1300 - 1599 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1600 - 1999 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2000 - 2400 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2400 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>       
+    
+    
+    <h2>Adult women</h2>      
+    <table class="list large">
+        <tr class="row-first">
+            <th class="col-first">Age</th>
+            <th>Very poor</th>
+            <th>Poor</th>
+            <th>Average</th>
+            <th>Above average</th>
+            <th class="col-last">Excellent</th>
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                20 - 29
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1500 m
+            </td>
+            <td>
+                1500 - 1799 m
+            </td>
+            <td>
+                1800 - 2199 m
+            </td>
+            <td>
+                2200 - 2700 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2700 m
+            </td>
+        </tr>
+        <tr class="r1 numerical">
+            <th class="col-first column-label">
+                30 - 39
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1400 m
+            </td>
+            <td>
+                1400 - 1699 m
+            </td>
+            <td>
+                1700 - 1999 m
+            </td>
+            <td>
+                 2000 - 2500 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2500 m
+            </td>                    
+
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                40 - 49
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1200 m
+            </td>
+            <td>
+                1200 - 1499 m
+            </td>
+            <td>
+                1500 - 1899 m
+            </td>
+            <td>
+                 1900 - 2300 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2300 m
+            </td>
+        </tr>
+        <tr class="r1 numerical row-last">
+            <th class="col-first column-label">
+                50+
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1100 m
+            </td>
+            <td>
+                1100 - 1399 m
+            </td>
+            <td>
+                1400 - 1699 m
+            </td>
+            <td>
+                 1700 - 2200 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2200 m
+            </td>
+        </tr>
+    </table>
+                
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Women between 20 and 29 years old" colspan="2">Women 20-29</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1500 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1500 - 1799 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1800 - 2199 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2200 - 2700 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;>2700 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+             
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Women between 30 and 39 years old" colspan="2">Women 30 - 39</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1400 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1400 - 1699 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1700 - 1999 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2000 - 2500 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2500 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Women between 40 and 49 years old" colspan="2">Women 40 - 49</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1200 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1200 - 1499 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1500 - 1899 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                1900 - 2300 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2300 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="Woen over 50 years old" colspan="2">Women 50+</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1100 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1100 - 1399 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1400 - 1699 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                1700 - 2200 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2200 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>           
+    
+                
+
+
+   <h2>Junior men</h2>      
+    <table class="list large">
+        <tr class="row-first">
+            <th class="col-first">Age</th>
+            <th>Very poor</th>
+            <th>Poor</th>
+            <th>Average</th>
+            <th>Above average</th>
+            <th class="col-last">Excellent</th>
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                11 - 12
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1950 m
+            </td>
+            <td>
+                1950 - 2049 m
+            </td>
+            <td>
+                2050 - 2249 m
+            </td>
+            <td>
+                2250 - 2600 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2600 m
+            </td>
+        </tr>
+        <tr class="r1 numerical">
+            <th class="col-first column-label">
+                13 - 14
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;2100 m
+            </td>
+            <td>
+                2100 - 2199 m
+            </td>
+            <td>
+                2200 - 2399 m
+            </td>
+            <td>
+                 2400 - 2700 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2700 m
+            </td>                    
+
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                15 - 16
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;2200 m
+            </td>
+            <td>
+                2200 - 2299 m
+            </td>
+            <td>
+                2300 - 2499 m
+            </td>
+            <td>
+                 2500 - 2800 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2800 m
+            </td>
+        </tr>
+        <tr class="r1 numerical row-last">
+            <th class="col-first column-label">
+                17 - 19
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;2300 m
+            </td>
+            <td>
+                2300 - 2499 m
+            </td>
+            <td>
+                2500 - 2699 m
+            </td>
+            <td>
+                2700 - 3000 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;3000 m
+            </td>
+        </tr>
+    </table>
+                
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="11 and 12 year old men" colspan="2">Men 11 - 12</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1950 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1950 - 2049 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                2050 - 2249 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2250 - 2600 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2600 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+             
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="13 and 14 year old men" colspan="2">Men 13 - 14</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;2100 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                2100 - 2199 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                2200 - 2399 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2400 - 2700 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2700 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="15 to 16 year old men" colspan="2">Men 15 - 16</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;2200 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                2200 - 2299 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                2300 - 2499 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2500 - 2800 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2800 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="17 to 19 year old men" colspan="2">Men 17 - 19</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;2300 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                2300 - 2499 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                2500 - 2699 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2700 - 3000 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;3000 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>       
+    
+    
+    <h2>Junior women</h2>      
+    <table class="list large">
+        <tr class="row-first">
+            <th class="col-first">Age</th>
+            <th>Very poor</th>
+            <th>Poor</th>
+            <th>Average</th>
+            <th>Above average</th>
+            <th class="col-last">Excellent</th>
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                11 - 12
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1300 m
+            </td>
+            <td>
+                1300 - 1499 m
+            </td>
+            <td>
+                1500 - 1749 m
+            </td>
+            <td>
+                1750 - 1950 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;1950 m
+            </td>
+        </tr>
+        <tr class="r1 numerical">
+            <th class="col-first column-label">
+                13 - 14
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1500 m
+            </td>
+            <td>
+                1500 - 1599 m
+            </td>
+            <td>
+                1600 - 1899 m
+            </td>
+            <td>
+                 1900 - 2000 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2000 m
+            </td>                    
+
+        </tr>
+        <tr class="r0 numerical">
+            <th class="col-first column-label">
+                15 - 16
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1600 m
+            </td>
+            <td>
+                1600 - 1699 m
+            </td>
+            <td>
+                1700 - 1999 m
+            </td>
+            <td>
+                2000 - 2100 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2100 m
+            </td>
+        </tr>
+        <tr class="r1 numerical row-last">
+            <th class="col-first column-label">
+                17 - 19
+            </th>
+            <td class="col-first-data">
+                &lt;&nbsp;1700 m
+            </td>
+            <td>
+                1700 - 1799 m
+            </td>
+            <td>
+                1800 - 2099 m
+            </td>
+            <td>
+                2100 - 2300 m
+            </td>
+            <td class="col-last">
+                &gt;&nbsp;2300 m
+            </td>
+        </tr>
+    </table>
+                
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="11 and 12 year old women" colspan="2">Women 11 - 12</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1300 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1300 - 1499 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1500 - 1749 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                1750 - 1950 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;>1950 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+             
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="13 and 14 year old women" colspan="2">Women 13 - 14</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1500 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1500 - 1599 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1600 - 1899 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                1900 - 2000 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2000 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="15 and 16 year old women" colspan="2">Women 15 - 16</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1600 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1600 - 1699 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1700 - 1999 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2000 - 2100 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2100 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>
+                
+                
+<table class="list small">
+    <tbody>
+        <tr class="row-first">
+            <th title="17 and 19 year old women" colspan="2">Women 17 - 19</th>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Very poor</th>
+            <td>
+                &lt;&nbsp;1700 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Poor</th>
+            <td>
+                1700 - 1799 metres
+            </td>
+        </tr>
+        <tr class="r0">
+            <th class="column-label">Average</th>
+            <td>
+                1800 - 2099 metres
+            </td>
+        </tr>
+        <tr class="r1">
+            <th class="column-label">Above average</th>
+            <td>
+                2100 - 2300 metres
+            </td>
+        </tr>        
+        <tr class="r0 row-last">
+            <th class="column-label">Excellent</th>
+            <td>
+                &gt;&nbsp;2300 metres
+            </td>
+        </tr>        
+    </tbody>
+</table>           
+                 
+                
+    <p><a href="#test-form">&uarr; go to calculator</a></p>
+    <p class="section-link">    
+        <a class="sec-b" href="/tools/vo2-max-calculators/vo2-max-calculator">VDOT calculator</a>
+    </p>                    
+
+</div>
+</section>   
+        
+            
+<section id="how-it-works">
+    <h1>
+        How It Works    </h1>
+    
+        <div class="details content">      
+    
+    <p>The runner's VO<sub>2</sub> Max can be estimated using the following formula:</p>
+    
+    <blockquote>
+        <code>VO<sub>2</sub> Max  = (distance - 504.9) / 44.73</code>
+    </blockquote>
+    
+    <p>For example, a runner achieving a distance of 2450 in 12 minutes has an estimated VO<sub>2</sub> Max of:</p>
+
+    <blockquote>
+        <code>(2450 - 504.9) / 44.73 = <strong>43.5</strong></code>
+    </blockquote>
+    
+    
+      
+    <p><a href="#test-form">&uarr; go to calculator</a></p>        
+        
+        
+    </div>
+</section>
+            
+            
+    <section id="relevant-links">
+        <h1>Related</h1>
+        <div class="details content">
+            
+            <h2>Calculators</h2>    
+            <ul>
+                <li><a href="/tools/vo2-max-calculators/balke-15-minute-run-test">Balke 15-minute run test</a></li>
+                <li><a href="/tools/vo2-max-calculators/vo2-max-calculator">VO<sub>2</sub> max calculator</a></li>
+                <li><a href="/tools/vo2-max-calculators/reverse-vo2-max-calculator">Reverse VO<sub>2</sub> max calculator</a></li>
+                <li><a href="/tools/vo2-max-calculators/balke-treadmill-test">Balke Treadmill Test</a></li>
+                <li><a href="/tools/vo2-max-calculators/bruce-protocol-treadmill-test">Bruce protocol treadmill test</a></li>                
+            </ul>
+            <h2>Further reading</h2>  
+            <ul>
+                <li><a target="_blank" href="https://en.wikipedia.org/wiki/Cooper_test">Cooper test (Wikipedia)</a></li>
+                <li><a target="_blank" href="https://www.google.co.uk/books/edition/Aerobics/IMJ6PwAACAAJ">Aerobics by Kenneth H. Cooper (Google Books)</a></li>
+                
+            </ul>
+        </div>
+    </section>             
+            
+        
+    </div>
+<nav class="publicised ">
+    
+<a class="lazyload hl v1" href="/tools/vo2-max-calculators/balke-treadmill-test" data-bg="https://runbundle.com/img/publicised/woman-on-treadmill.webp">
+    <div class="hd">
+        BALKE TREADMILL TEST    </div>
+    <div class="cn">
+       Discover your VO<sub>2</sub> Max/VDOT with a simple treadmill walking test    </div>
+</a> 
+<a class="lazyload hl v2" href="/tools/vo2-max-calculators/bruce-protocol-treadmill-test" data-bg="https://runbundle.com/img/publicised/legs-treadmill.webp">
+    <div class="hd">
+        BRUCE PROTOCOL TEST    </div>
+    <div class="cn">
+       A simple treadmill test to predict your VO<sub>2</sub> Max    </div>
+</a>     
+</nav>
+        
+        
+</div>
+  
+    </main>
+    </div>
+      <footer>
+        <div id="cop">
+            Copyright &copy; 2016&ndash;2025 runbundle
+        </div>
+
+            <div id="footer-links">
+                <a href="/sitemap/">sitemap</a> | 
+                <a href="/news/">news</a> | 
+                <a href="/privacy-policy">privacy</a> | 
+                <a href="/cookies">cookies</a> | 
+                <a href="/contact">contact</a> | 
+                <a href="/about/"><span>about</span></a>
+                
+                
+                
+            </div>
+            
+          
+          
+          <div id="social-links">
+              <a title="facebook" class="nothing-after" target="_blank" href="https://www.facebook.com/runbundledotcom/" id="facebook"></a>
+              <a title="X" class="nothing-after" target="_blank" href="https://twitter.com/runbundledotcom/" id="twitter"></a>
+              <a title="Pinterest" class="nothing-after" target="_blank" href="https://pinterest.com/runbundle/" id="pinterest"></a>
+          </div>
+          
+          
+    
+    
+            <script async src="https://btloader.com/tag?o=5698917485248512&upapi=true&domain=runbundle.com"></script>
+        <script>!function(){"use strict";var e;e=document,function(){var t,n;function r(){var t=e.createElement("script");t.src="https://cafemedia-com.videoplayerhub.com/galleryplayer.js",e.head.appendChild(t)}function a(){var t=e.cookie.match("(^|[^;]+)\s*__adblocker\s*=\s*([^;]+)");return t&&t.pop()}function c(){clearInterval(n)}return{init:function(){var e;"true"===(t=a())?r():(e=0,n=setInterval((function(){100!==e&&"false"!==t||c(),"true"===t&&(r(),c()),t=a(),e++}),50))}}}().init()}();</script> 
+              
+          
+    </footer>
+    
+    
+ 
+
+
+<script async data-id="101451854" src="/b58987aa987dbb.php"></script>
+
+
+  </body>
+  
+  
+</html>
+
+    <!-- 0.0045700073242188 -->

@@ -1,0 +1,80 @@
+1. Creare table prefixe telefon: 
+
+CREATE TABLE country_phone_codes (
+	country varchar2(20) PRIMARY KEY,
+	code varchar2(10) NOT NULL 	
+);
+
+
+2. Create table trainign programs:
+
+CREATE TABLE training_programs (
+    program_id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    duration INT(11) DEFAULT NULL,
+    description TEXT DEFAULT NULL,
+    level VARCHAR(50) DEFAULT NULL,
+    price INT(11) NOT NULL,
+    trainer_id INT(11) DEFAULT NULL,
+    PRIMARY KEY (program_id),
+    FOREIGN KEY (trainer_id) REFERENCES users(user_id) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+2a. Add test programs:
+	INSERT INTO training_programs (program_id, name, type, duration, description, level, price, trainer_id) VALUES
+    (1, 'Daily mobility trainings', 'Mobility', 12, NULL, 'Beginner/Intermediate', 350, NULL),
+    (2, 'Calisthenics', 'Strength', 10, NULL, 'Advanced', 700, NULL),
+    (3, 'Run 5k', 'Endurance', 8, NULL, 'Beginner', 300, NULL),
+    (4, 'Track interval trainings', 'VO2max', 6, NULL, 'Intermediate/Advanced', 400, NULL),
+    (5, 'Flexibility Training', 'Mobility', 10, NULL, 'Beginner', 350, NULL),
+    (6, 'Strength Fundamentals', 'Strength', 12, NULL, 'Intermediate', 450, NULL),
+    (7, 'Endurance Marathon Training', 'Endurance', 14, NULL, 'Advanced', 950, NULL),
+    (8, 'Mobility for Athletes', 'Mobility', 8, NULL, 'Intermediate', 400, NULL),
+    (9, 'Strength and Conditioning', 'Strength', 16, NULL, 'Advanced', 1200, NULL),
+    (10, 'HIIT for Endurance', 'Endurance', 12, NULL, 'Intermediate', 650, NULL),
+    (11, 'Advanced VO2max Training', 'VO2max', 10, NULL, 'Advanced', 1100, NULL),
+    (12, 'Sprint Training', 'VO2max', 6, NULL, 'Beginner', 300, NULL);
+
+5. 
+CREATE TABLE login_cookie_tokens (
+    token_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    user_type ENUM('client', 'trainer', 'admin') NOT NULL,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expires_at TIMESTAMP NULL
+);
+
+
+------------- 
+
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_type VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(20) NOT NULL,
+    sign_up_date DATE NOT NULL
+);
+
+CREATE TABLE login_cookie_tokens (
+    token_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expires_at TIMESTAMP DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
+);
+
+.... delete cascasde
+
+CREATE TABLE contact_form_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
